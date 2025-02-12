@@ -1,0 +1,81 @@
+/* General Chat Window */
+.chat-window {
+    width: 100%;
+    max-width: 800px; 
+    height: 80vh; 
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    margin: auto;     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Messages container: scrollable area for chat */
+  .messages-container {
+    display: flex;
+    flex-direction: column; 
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 5px; 
+  }
+  
+  /* Style for individual messages */
+  .message {
+    text-align: justify;
+    
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    max-width: 60%; 
+    word-wrap: break-word; 
+  }
+  
+  /* Delivery boy (user) message on the right side */
+  .message.delivery-boy {
+    background-color: #d1e7ff; 
+    align-self: flex-end; 
+  }
+  
+  /* Customer (bot) message on the left side */
+  .message.customer {
+    background-color: #e1e1e1; 
+    align-self: flex-start;
+  }
+  
+  /* Input section at the bottom of the chat */
+  .message-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ccc; 
+  }
+  
+  /* Style for the input field */
+  .message-input-container input {
+    width: 80%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+  }
+  
+  /* Style for the Send button */
+  .message-input-container button {
+    width: 19%;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .message-input-container button:hover {
+    background-color: #0056b3;
+  }
+  
